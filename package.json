@@ -1,5 +1,5 @@
 {
-  "name": "@google/aside",
+  "name": "@leipzig-gourmet/aside",
   "version": "1.4.5",
   "type": "module",
   "description": "Apps Script IDE framework",
@@ -15,8 +15,6 @@
     ".eslintrc.json",
     "jest.config.json",
     "LICENSE",
-    "license-config.json",
-    "license-header.txt",
     ".prettierignore",
     ".prettierrc.json",
     "rollup.config.mjs",
@@ -28,10 +26,9 @@
   "main": "index.js",
   "scripts": {
     "clean": "rimraf build",
-    "lint": "npm run license && eslint --fix src/ test/",
-    "lint:staged": "npm run license && lint-staged",
+    "lint": "eslint --fix src/ test/",
+    "lint:staged": "lint-staged",
     "build": "npm run clean && npm run lint && tsc && npm run copy-files",
-    "license": "license-check-and-add add -f license-config.json",
     "test": "jest test/ --detectOpenHandles",
     "copy-files": "ncp .gitignore dist/.gitignore-target",
     "prepare": "is-ci || husky install"
