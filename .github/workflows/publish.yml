@@ -20,6 +20,7 @@ jobs:
       - uses: JS-DevTools/npm-publish@v3
         with:
           token: ${{ secrets.NPM_TOKEN }}
+          registry: "https://registry.npmjs.org"
       - uses: JS-DevTools/npm-publish@v3
         with:
           token: ${{ secrets.PACKAGES_ACCESS_TOCKEN }}
