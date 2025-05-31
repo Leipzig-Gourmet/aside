@@ -23,9 +23,6 @@
     "template-ui"
   ],
   "repository": "https://github.com/leipzig-gourmet/aside.git",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "main": "index.js",
   "scripts": {
     "clean": "rimraf build",
