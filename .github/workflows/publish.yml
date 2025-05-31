@@ -19,5 +19,8 @@ jobs:
       - run: npm test
       - uses: JS-DevTools/npm-publish@v3
         with:
+          token: ${{ secrets.NPM_TOKEN }}
+      - uses: JS-DevTools/npm-publish@v3
+        with:
           token: ${{ secrets.PACKAGES_ACCESS_TOCKEN }}
           registry: "https://npm.pkg.github.com"
